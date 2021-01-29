@@ -14,6 +14,9 @@ if [[ ${projecttype} == "website" ]]
 then
     cp ./automation/filetemplates/template.html ./${projectname}/home.html
     mkdir ./${projectname}/css
+    mkdir ./${projectname}/scss
+    touch ./${projectname}/scss/styles.scss
+    echo "/*Remember to put 'sass --watch scss:css' from the terminal while in this directory*/" >> ./${projectname}/scss/styles.scss
     cp ./automation/filetemplates/template.css ./${projectname}/css/styles.css
     cp ./automation/filetemplates/template.js ./${projectname}/main.js
 elif [[${projecttype} == "shell" ]]
