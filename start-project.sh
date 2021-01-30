@@ -16,11 +16,11 @@ then
     mkdir ./${projectname}/css
     mkdir ./${projectname}/scss
     touch ./${projectname}/scss/styles.scss
-    cp ./automation/filetemplates/template.css ./${projectname}/scss/styles.scss
+    cp ./automation/filetemplates/template.scss ./${projectname}/scss/styles.scss
     cp ./automation/filetemplates/template.js ./${projectname}/main.js
 elif [[${projecttype} == "shell" ]]
 then
-    cp ./automation/filetemplates/template.html ./${projectname}.sh
+    cp ./automation/filetemplates/template.sh ./${projectname}.sh
 fi
 
 echo "Files made! Where do you want this file to go?
