@@ -3,8 +3,7 @@ Website?
 Shell?"
 
 read projecttype
-echo "What is the name of this project?
-()"
+echo "What is the name of this project?"
 read projectname
 
 echo "working..."
