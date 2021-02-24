@@ -28,10 +28,4 @@ read destination
 
 mv ./${projectname}/ ${destination}/
 
-echo "Done! would you like me to send you there? y or n"
-read moveans
-
-if [[ ${moveans} == y]]
-then
-    cd ${destination}
-fi
+echo "Done!"
